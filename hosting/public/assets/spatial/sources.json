@@ -1,0 +1,24 @@
+{
+  "created": "2026-11-05",
+  "scene": {
+    "files": ["coupe.js", "world.js"],
+    "origin": "Geometría, composición, shader de horizonte y ajustes de material originales creados para este proyecto. Sin extracción de modelos de GTA ni emblemas de fabricante de automóvil.",
+    "posters": ["scene-poster.jpg", "scene-poster-mobile.jpg"],
+    "posterOrigin": "Renders del canvas original, sin texto ni interfaz horneados."
+  },
+  "dependencies": [
+    {
+      "name": "Three.js r180 and official Reflector/RoomEnvironment addons",
+      "source": "https://github.com/mrdoob/three.js/tree/r180",
+      "license": "MIT; ../vendor/THREE-LICENSE.txt",
+      "modification": "Imports de addons adaptados a three.module.min.js local. Shader de reflejo personalizado en world.js."
+    },
+    {
+      "name": "Syncopate Bold",
+      "source": "https://github.com/google/fonts/tree/main/apache/syncopate",
+      "license": "Apache-2.0; SYNCOPATE-LICENSE.txt"
+    }
+  ],
+  "existingMedia": "Fotografías y video oficial conservados: ../campaign/sources.json. Copyright de Rockstar y sus titulares; no se declara licencia libre ni se concede permiso de redistribución. Verificar derechos para explotación pública/comercial.",
+  "gsap": "Se mantiene GSAP 3.13.0 existente, bajo su licencia estándar; no se declara MIT."
+}

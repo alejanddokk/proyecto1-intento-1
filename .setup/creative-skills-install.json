@@ -1,0 +1,51 @@
+[
+  {
+    "Name": "impeccable",
+    "Repo": "pbakaus/impeccable",
+    "Revision": "5af4319c4e7a7ee3e5e2b9fe899bcfb21c6190cb",
+    "Path": ".agents/skills/impeccable",
+    "State": "installed"
+  },
+  {
+    "Name": "design-taste-frontend",
+    "Repo": "Leonxlnx/taste-skill",
+    "Revision": "9b4bf937a1f69348126959c15d2f99a73e65699b",
+    "Path": "skills/taste-skill",
+    "State": "installed"
+  },
+  {
+    "Name": "gsap-core",
+    "Repo": "greensock/gsap-skills",
+    "Revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "Path": "skills/gsap-core",
+    "State": "installed"
+  },
+  {
+    "Name": "gsap-timeline",
+    "Repo": "greensock/gsap-skills",
+    "Revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "Path": "skills/gsap-timeline",
+    "State": "installed"
+  },
+  {
+    "Name": "gsap-scrolltrigger",
+    "Repo": "greensock/gsap-skills",
+    "Revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "Path": "skills/gsap-scrolltrigger",
+    "State": "installed"
+  },
+  {
+    "Name": "gsap-plugins",
+    "Repo": "greensock/gsap-skills",
+    "Revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "Path": "skills/gsap-plugins",
+    "State": "installed"
+  },
+  {
+    "Name": "gsap-performance",
+    "Repo": "greensock/gsap-skills",
+    "Revision": "aed9cfd3277740755f6bfc1155c7aa645403b760",
+    "Path": "skills/gsap-performance",
+    "State": "installed"
+  }
+]

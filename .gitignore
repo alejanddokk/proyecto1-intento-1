@@ -1,0 +1,16 @@
+.playwright-mcp/
+.env
+.env.*
+!.env.example
+.dev.vars*
+.data/
+.wrangler/
+.sites-runtime/
+node_modules/
+dist/
+generated/
+outputs/
+*.sqlite*
+*.db
+*.log
+*.tar.gz

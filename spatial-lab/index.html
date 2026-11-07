@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#130e19">
+  <meta name="description" content="Una exploración independiente del universo de Vice City. Escena tridimensional interactiva.">
+  <title>VI — Otra ciudad. Otras reglas.</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="style.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/":"./vendor/"}}</script>
+</head>
+<body>
+  <div class="world" id="world" aria-hidden="true"></div>
+  <div class="atmosphere" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="page">
+    <header>
+      <a class="wordmark" href="./" aria-label="VI, inicio">VI<span>VICE CITY<br>AFTER HOURS</span></a>
+      <span class="edition">UN ESTUDIO DE LEONIDA</span>
+      <button class="sound" id="pause" aria-pressed="false" aria-label="Pausar movimiento"><span class="pause-icon" aria-hidden="true">Ⅱ</span><span id="pause-label">En movimiento</span></button>
+    </header>
+    <main>
+      <div class="intro">
+        <p class="eyebrow"><span></span> EL OTRO LADO DEL PARAÍSO</p>
+        <h1>Otra ciudad.<br>Otras <em>reglas.</em></h1>
+        <p class="description">El sol baja. La ciudad despierta.<br>Bienvenido al lugar donde todo puede pasar.</p>
+        <a class="explore" href="#scene-control" id="explore">Entrá en la escena <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="scene-caption" aria-hidden="true"><span class="cross">+</span><span>VICE CITY<br><b>GOLDEN HOUR</b></span><i></i></div>
+      <div class="status" id="status" role="status">Preparando la escena…</div>
+      <div class="fallback" id="fallback" hidden><strong>VI</strong><p id="fallback-message">La vista 3D no está disponible en este navegador.</p><button id="retry">Volver a intentar</button></div>
+    </main>
+    <footer>
+      <div class="footnote"><span class="live-dot"></span><span>VICE CITY, LEONIDA<br><small>Una exploración independiente · GTA VI</small></span></div>
+      <section class="dock" id="scene-control" aria-label="Controles de la escena" tabindex="-1">
+        <span class="dock-label">LA LUZ</span>
+        <div class="switch" role="group" aria-label="Iluminación"><button class="active" data-theme="sunset" aria-pressed="true"><span class="swatch sunset"></span>Atardecer</button><button data-theme="night" aria-pressed="false"><span class="swatch night"></span>Medianoche</button></div>
+        <span class="divider"></span><button class="reset" id="reset" aria-label="Restablecer vista" title="Restablecer vista">↺</button>
+      </section>
+      <p class="hint">MOVÉ EL CURSOR<br><span>Arrastrá para girar · ↑ ↓ ← → al enfocar la escena</span></p>
+    </footer>
+  </div>
+  <button class="scene-keyboard" id="scene-keyboard" aria-label="Explorar objeto 3D. Usá las flechas para girar y Escape para restablecer."></button>
+  <noscript><p class="noscript">Activá JavaScript para explorar la escena tridimensional.</p></noscript>
+  <script type="module" src="scene.js"></script>
+</body>
+</html>

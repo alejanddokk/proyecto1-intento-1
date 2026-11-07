@@ -1,0 +1,10 @@
+{
+  "consulted": "2026-11-05",
+  "officialPage": "https://www.playstation.com/en-us/games/grand-theft-auto-vi/",
+  "assets": [
+    {"file":"vice-city.jpg","source":"https://gmedia.playstation.com/is/image/SIEPDC/grand-theft-auto-vi-screenshot-10-en-06may25?fmt=jpeg&wid=1600&qlt=85","credit":"Rockstar Games / PlayStation official gallery"},
+    {"file":"leonida.jpg","source":"https://gmedia.playstation.com/is/image/SIEPDC/grand-theft-auto-vi-screenshot-02-en-06may25?fmt=jpeg&wid=1280&qlt=85","credit":"Rockstar Games / PlayStation official gallery"},
+    {"file":"keyart.jpg","source":"https://gmedia.playstation.com/is/image/SIEPDC/Grand-Theft-Auto-VI-pre-order-hero-desktop-03-19jun25$en?fmt=jpeg&wid=1600&qlt=85","credit":"Rockstar Games / PlayStation official key art"},
+    {"file":"BarlowCondensed-ExtraBold.ttf","source":"https://github.com/google/fonts/tree/main/ofl/barlowcondensed","license":"OFL-1.1; FONT-LICENSE.txt"}
+  ]
+}

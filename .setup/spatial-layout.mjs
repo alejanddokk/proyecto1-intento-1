@@ -1,0 +1,12 @@
+import{readFile,writeFile}from'node:fs/promises';
+let html=await readFile(new URL('../index.html',import.meta.url),'utf8');
+if(html.includes('world-movie'))throw new Error('Layout ya aplicado');
+html=html.replace('assets/campaign/BarlowCondensed-ExtraBold.ttf','assets/spatial/Syncopate-Bold.ttf').replace('    <link rel="preload" href="assets/campaign/vice-city.jpg" as="image">\n','').replace('href="campaign.css"','href="spatial.css"').replace('<body class="campaign">','<body class="campaign spatial-campaign">');
+const start=html.indexOf('      <section class="hero"'),end=html.indexOf('</section>',start)+10;
+let hero=html.slice(start,end).replace(/<div class="hero-art"[\s\S]*?<div class="hero-art__shade"><\/div><\/div>/,'');
+hero=hero.replace('<p class="hero__disclaimer">','<div class="scene-controls" id="scene-controls" hidden><label for="scene-angle">Girar la vista</label><input type="range" id="scene-angle" min="-1" max="1" step="0.05" value="0" aria-label="Girar la escena 3D"><button id="scene-reset" type="button">Centrar</button></div><p class="hero__disclaimer">');
+const world=`<div class="world-movie" id="mundo"><div class="world-sticky" aria-hidden="true"><img class="world-poster" src="assets/spatial/scene-poster.jpg" width="1440" height="900" alt="" fetchpriority="high"><canvas id="world-canvas"></canvas></div>${hero}<section class="world-passage" aria-labelledby="passage-title"><div class="passage-copy"><p>Vice City / Leonida</p><h2 id="passage-title">Algunas ciudades<br><span>nunca se olvidan.</span></h2><a href="#leonida">Conocer Leonida</a></div></section><p id="world-status" class="world-status" role="status">Preparando la escena…</p><button id="world-retry" class="world-retry" type="button" hidden>Reintentar escena</button></div>`;
+html=html.slice(0,start)+world+html.slice(end);
+const fs=html.indexOf('<section class="film-scene"'),fe=html.indexOf('</section>',fs)+10,film=html.slice(fs,fe);
+html=html.slice(0,fs)+html.slice(fe);const cmp=html.indexOf('<section class="section" id="comparativa"');html=html.slice(0,cmp)+film+'\n'+html.slice(cmp);
+await writeFile(new URL('../index.html',import.meta.url),html);

@@ -1,0 +1,217 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <meta name="theme-color" content="#080b14">
+    <meta name="description" content="Prepárate para GTA VI: cuenta regresiva, videos oficiales y datos técnicos. Regístrate en nuestra lista independiente y verifica tu correo.">
+    <title>GTA VI — Tu próxima historia empieza en Vice City</title>
+    <link rel="icon" href="data:,">
+    <link rel="preload" href="assets/spatial/Syncopate-Bold.ttf" as="font" type="font/ttf" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="spatial.css">
+  </head>
+  <body class="campaign spatial-campaign">
+    <a class="skip-link" href="#contenido">Saltar al contenido</a>
+    <header class="hero__header">
+      <div class="hero__header-inner">
+        <!-- Marca tipográfica provisional; sustituir por un logo autorizado. -->
+        <div class="hero__logo" role="img" aria-label="Grand Theft Auto VI" data-testid="hero-logo">
+          <span class="hero__logo-name" aria-hidden="true">grand theft auto</span>
+          <span class="hero__logo-number" aria-hidden="true">VI</span>
+        </div>
+        <span class="hero__edition">Vice City / Nueva era</span>
+        <nav class="campaign-nav" aria-label="Navegación principal"><a href="#adelanto">Ver adelanto</a><a href="#comparativa">Comparar</a><a href="#hardware">Requisitos</a><a class="nav-register" href="#registro">Reservar mi cupo <span aria-hidden="true">↗</span></a></nav>
+        <button class="motion-control" id="motion-control" type="button" aria-pressed="false" hidden>Reducir animación</button>
+      </div>
+    </header>
+
+    <main id="contenido" tabindex="-1">
+<div class="world-movie" id="mundo"><div class="world-sticky" aria-hidden="true"><picture class="world-poster"><source media="(max-width:760px)" srcset="assets/spatial/scene-poster-mobile.jpg"><img src="assets/spatial/scene-poster.jpg" width="1440" height="900" alt="" fetchpriority="high"></picture><canvas id="world-canvas"></canvas></div>      <section class="hero" aria-labelledby="hero-title" data-testid="hero">
+        
+        <div class="hero__inner">
+
+          <div class="hero__grid">
+            <div class="hero__content">
+              <p class="hero__eyebrow"><span aria-hidden="true"></span> El regreso que estabas esperando</p>
+              <h1 id="hero-title"><span class="headline-row"><span class="headline-ink">La espera es real.</span></span><span class="headline-row"><span class="headline-ink">La próxima historia</span></span><span class="headline-row"><span class="headline-ink">es tuya.</span></span></h1>
+              <p class="hero__description">Vuelve a sentir Vice City. Prepárate para GTA VI y forma parte de nuestra lista para el lanzamiento.</p>
+
+              <div class="hero__countdown-wrapper">
+                <p class="hero__label" id="countdown-label">Cuenta atrás para la nueva era</p>
+                <!-- Fecha de referencia explícita. No anunciar cada segundo. -->
+                <div class="countdown" id="countdown" role="group" aria-labelledby="countdown-label" aria-describedby="countdown-note" data-launch="2026-11-19T00:00:00-03:00" data-testid="countdown">
+                  <div class="countdown__unit"><span class="countdown__value" id="countdown-days" data-countdown="days">--</span><span class="countdown__label">Días</span></div>
+                  <span class="countdown__separator" aria-hidden="true">:</span>
+                  <div class="countdown__unit"><span class="countdown__value" id="countdown-hours" data-countdown="hours">--</span><span class="countdown__label">Horas</span></div>
+                  <span class="countdown__separator" aria-hidden="true">:</span>
+                  <div class="countdown__unit"><span class="countdown__value" id="countdown-minutes" data-countdown="minutes">--</span><span class="countdown__label">Minutos</span></div>
+                  <span class="countdown__separator" aria-hidden="true">:</span>
+                  <div class="countdown__unit"><span class="countdown__value" id="countdown-seconds" data-countdown="seconds">--</span><span class="countdown__label">Segundos</span></div>
+                </div>
+                <p class="hero__note" id="countdown-note">19 de noviembre de 2026 · 00:00, Buenos Aires (UTC−3). Referencia para esta cuenta; el horario puede variar por plataforma y región. <a href="https://www.playstation.com/en-gb/support/games/gta-vi-support/">Fuente</a></p>
+                <p id="countdown-status" class="hero__note" role="status"></p>
+              </div>
+
+              <div class="hero__actions">
+                <a class="button button--primary" id="reserve-cta" href="#registro" aria-describedby="reservation-note" data-testid="reserve-cta">
+                  Reservar mi cupo <span aria-hidden="true">↗</span>
+                </a>
+                <p class="hero__note" id="reservation-note">Tu lugar en nuestra lista, con correo verificado. Sin compra ni pago.</p>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="scene-controls" id="scene-controls" hidden><label for="scene-angle">Girar la vista</label><input type="range" id="scene-angle" min="-1" max="1" step="0.05" value="0" aria-label="Girar la escena 3D"><button id="scene-reset" type="button">Centrar</button></div><p class="hero__disclaimer">Proyecto independiente, sin afiliación con Rockstar Games. La inscripción en esta lista no constituye una compra ni garantiza una copia del juego.</p>
+        </div>
+      </section><section class="world-passage" aria-labelledby="passage-title"><div class="passage-copy"><p>Vice City / Leonida</p><h2 id="passage-title">Algunas ciudades<br><span>nunca se olvidan.</span></h2><a href="#leonida">Conocer Leonida</a></div></section><p id="world-status" class="world-status" role="status">Preparando la escena…</p><button id="world-retry" class="world-retry" type="button" hidden>Reintentar escena</button></div>
+
+      
+      <section class="leonida-scene" id="leonida" aria-labelledby="leonida-title">
+        <div class="leonida-scene__stage">
+          <h2 id="leonida-title">De Los Santos<br>a <span>Vice City.</span></h2>
+          <div class="leonida-track">
+            <figure class="leonida-frame"><img src="assets/campaign/leonida.jpg" width="1280" height="720" alt="Una calle de Leonida bajo un viaducto, en una captura oficial de GTA VI" loading="lazy" decoding="async"><figcaption>Leonida / La vida en la calle</figcaption></figure>
+            <figure class="leonida-frame leonida-frame--portrait"><img src="assets/campaign/keyart.jpg" width="1600" height="900" alt="Jason y Lucia frente a Vice City en el arte oficial de GTA VI" loading="lazy" decoding="async"><figcaption>Jason y Lucia / Vice City</figcaption></figure>
+          </div>
+          <a class="scene-link" href="#comparativa">Explorar lo que sabemos <span aria-hidden="true">↓</span></a>
+        </div>
+      </section>
+
+      <section class="film-scene" id="adelanto" aria-labelledby="film-title">
+        <div class="film-scene__stage">
+          <div class="film-scene__title"><h2 id="film-title">Algunas ciudades<br><em>nunca se olvidan.</em></h2><span aria-hidden="true" class="film-scene__numeral">VI</span></div>
+          <figure class="hero__media" aria-labelledby="trailer-caption">
+              <div class="hero__media-heading" aria-hidden="true"><span>La primera señal</span><span>01 / VI</span></div>
+              <div class="video-frame">
+                <video
+                  id="hero-video"
+                  controls autoplay loop muted playsinline
+                  preload="none"
+                  poster="assets/campaign/leonida.jpg"
+                  aria-label="Grand Theft Auto VI — Clip promocional oficial de Jason Duval, sin sonido al iniciar"
+                  aria-describedby="trailer-caption"
+                  data-testid="official-trailer"
+                >
+                  <source src="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.10.gc09c9y-j9.mp4" type="video/mp4">
+                  Tu navegador no admite video HTML5. Puedes abrir el MP4 desde el enlace bajo el reproductor.
+                </video>
+              </div>
+              <figcaption id="trailer-caption"><span>GTA VI · Clip oficial de Jason Duval · MP4 temporal</span><a href="https://www.rockstargames.com/VI/_next/static/media/Jason_Duval_Video_Clip.10.gc09c9y-j9.mp4">Abrir video MP4 <span aria-hidden="true">↗</span></a></figcaption>
+              <p id="video-status" class="hero__note" role="status"></p>
+              <p class="media-description">Jason Duval en Leonida. Fragmento promocional del <a href="https://www.rockstargames.com/VI/media/videos">catálogo oficial de Rockstar</a>, elegido por su menor tamaño. Inicia silenciado; usa los controles para pausar o activar el sonido.</p>
+              <p class="hero__media-tagline" aria-hidden="true">Algunas ciudades<br><em>nunca se olvidan.</em></p>
+            </figure>
+          <div class="film-shutter film-shutter--left" aria-hidden="true"></div><div class="film-shutter film-shutter--right" aria-hidden="true"></div>
+        </div>
+      </section>
+<section class="section" id="comparativa" aria-labelledby="comparison-title">
+        <div class="section__intro">
+          <p class="section__eyebrow">01 / El salto a Leonida</p>
+          <h2 id="comparison-title">Otra ciudad.<br><span>Una nueva escala.</span></h2>
+          <p>De Los Santos a Vice City. Explora lo que sabemos sin confundir imágenes de un adelanto con especificaciones del juego final.</p>
+        </div>
+        <div class="filter-bar" role="group" aria-label="Filtrar comparativa por tipo de información" hidden>
+          <button type="button" class="filter-button" data-filter="all" aria-pressed="true">Todo</button>
+          <button type="button" class="filter-button" data-filter="confirmed" aria-pressed="false">Confirmado</button>
+          <button type="button" class="filter-button" data-filter="observed" aria-pressed="false">Visto en adelantos</button>
+        </div>
+        <p class="sr-only" id="comparison-status" role="status"></p>
+        <div class="comparison-grid" id="comparison-grid">
+          <article class="comparison-card" data-category="observed">
+            <span class="badge">Visto en adelantos</span><h3>Agua y física de fluidos</h3>
+            <dl><div><dt>GTA V</dt><dd>Océano, oleaje y navegación forman parte de Los Santos.</dd></div><div><dt>GTA VI</dt><dd>Los adelantos muestran agua, estelas y entornos costeros. No hay aquí una medición verificada de mejora en la simulación de fluidos.</dd></div></dl>
+          </article>
+          <article class="comparison-card" data-category="observed">
+            <span class="badge">Visto en adelantos</span><h3>Población y vida urbana</h3>
+            <dl><div><dt>GTA V</dt><dd>Peatones y tráfico recorren Los Santos y Blaine County.</dd></div><div><dt>GTA VI</dt><dd>Se ven playas y calles concurridas en Leonida. Las imágenes no confirman un número de NPC ni una mejora cuantificada de su IA.</dd></div></dl>
+          </article>
+          <article class="comparison-card" data-category="observed">
+            <span class="badge">Visto en adelantos</span><h3>Del amanecer al neón</h3>
+            <dl><div><dt>GTA V</dt><dd>Su mundo ya tiene ciclo de día y noche.</dd></div><div><dt>GTA VI</dt><dd>Los videos muestran escenas diurnas y nocturnas. No publicamos una duración del ciclo ni prometemos una simulación atmosférica específica.</dd></div></dl>
+          </article>
+          <article class="comparison-card" data-category="confirmed">
+            <span class="badge badge--confirmed">Confirmado</span><h3>Una generación diferente</h3>
+            <dl><div><dt>GTA V</dt><dd>La versión Enhanced ya incorpora efectos de ray tracing. No debe confundirse con la edición original.</dd></div><div><dt>GTA VI</dt><dd>Anunciado para PS5 y Xbox Series X|S. Rockstar identifica el Tráiler 2 como material capturado en el juego en PS5.</dd></div></dl>
+          </article>
+        </div>
+        <p class="source-note">Fuentes: <a href="https://www.rockstargames.com/VI">Rockstar · GTA VI y sus adelantos</a>, <a href="https://www.youtube.com/watch?v=VQRLujxTm3c">Tráiler 2 · descripción oficial</a> y <a href="https://www.rockstargames.com/gta-v">GTA V · edición actual</a>. Consulta editorial: 4 de noviembre de 2026.</p>
+      </section>
+
+      <section class="section" id="hardware" aria-labelledby="hardware-title">
+        <div class="section__intro">
+          <p class="section__eyebrow">02 / Prepara tu equipo</p>
+          <h2 id="hardware-title">Toda la expectativa.<br><span>Los datos, claros.</span></h2>
+          <p>Las plataformas anunciadas son PS5 y Xbox Series X|S. Las fuentes oficiales consultadas no publican requisitos de PC ni porcentajes de consumo de CPU, GPU o RAM para GTA VI.</p>
+        </div>
+        <div class="hardware-grid">
+          <article class="hardware-card">
+            <h3><button class="accordion-trigger" id="minimum-trigger" type="button" aria-expanded="true" aria-controls="minimum-panel" disabled>Requisitos Mínimos <span aria-hidden="true">−</span></button></h3>
+            <div class="accordion-panel" id="minimum-panel" role="region" aria-labelledby="minimum-trigger">
+              <span class="badge badge--confirmed">Información oficial disponible</span>
+              <dl class="spec-list"><div><dt>Plataformas</dt><dd>PlayStation 5 · Xbox Series X|S</dd></div><div><dt>Almacenamiento PS5</dt><dd>212 GB libres para la precarga, según PlayStation.</dd></div><div><dt>CPU / GPU / RAM en PC</dt><dd>No publicados. No hay una configuración mínima oficial de PC en las fuentes consultadas.</dd></div></dl>
+              <p class="source-note"><a href="https://www.rockstargames.com/VI">Plataformas · Rockstar</a> / <a href="https://www.playstation.com/en-gb/support/games/gta-vi-support/">Precarga · PlayStation</a></p>
+            </div>
+          </article>
+          <article class="hardware-card">
+            <h3><button class="accordion-trigger" id="recommended-trigger" type="button" aria-expanded="true" aria-controls="recommended-panel" disabled>Requisitos Recomendados <span aria-hidden="true">−</span></button></h3>
+            <div class="accordion-panel" id="recommended-panel" role="region" aria-labelledby="recommended-trigger">
+              <span class="badge">Pendiente de especificaciones</span>
+              <dl class="spec-list"><div><dt>Configuración PC</dt><dd>No publicada oficialmente.</dd></div><div><dt>Resolución / FPS objetivo</dt><dd>Sin un perfil recomendado verificable en las fuentes de esta página.</dd></div><div><dt>Preparación en consola</dt><dd>Revisa espacio libre, actualiza el sistema y verifica tu compra en la tienda oficial.</dd></div></dl>
+              <p class="source-note"><a href="https://www.playstation.com/en-gb/support/games/gta-vi-support/">Guía de preparación · PlayStation</a>. Los 212 GB corresponden a PS5; no se extrapolan a Xbox o PC.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section registration" id="registro" aria-labelledby="registration-title">
+        <div class="registration-art" aria-hidden="true"><img src="assets/campaign/keyart.jpg" width="1600" height="900" alt="" loading="lazy" decoding="async"></div>
+        <div class="section__intro">
+          <p class="section__eyebrow">03 / Tu próxima historia</p>
+          <h2 id="registration-title" tabindex="-1">Vice City te espera.<br><span>Da el primer paso.</span></h2>
+          <p>Elige tu plataforma, verifica tu correo y confirma tu inscripción en nuestra lista independiente.</p>
+        </div>
+        <div class="registration__card">
+          <ol class="registration-steps" aria-label="Pasos del registro"><li aria-current="step">1. Tus datos</li><li>2. Verifica tu correo</li><li>3. Confirmación</li></ol>
+          <p class="demo-notice" id="registration-availability" role="status">Comprobando disponibilidad del registro…</p>
+          <form id="registration-form" aria-describedby="registration-availability" data-testid="registration-form">
+            <div class="form-field"><label for="name">Nombre</label><input id="name" name="name" type="text" autocomplete="given-name" placeholder="Tu nombre" required minlength="2" maxlength="80" aria-describedby="name-hint"><small id="name-hint">Al menos 2 caracteres.</small></div>
+            <div class="form-field"><label for="email">Email</label><input id="email" name="email" type="email" autocomplete="email" inputmode="email" placeholder="tu@email.com" required maxlength="254"></div>
+            <div class="form-field"><label for="platform">Plataforma</label><select id="platform" name="platform" required><option value="" disabled selected>Elige dónde vas a jugar</option><option value="ps5">PS5</option><option value="xbox">Xbox Series X|S</option></select></div>
+            <div class="honeypot" aria-hidden="true"><label for="website">Deja este campo vacío</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+            <label class="consent-label"><input type="checkbox" name="consent" id="consent" required><span>Acepto el tratamiento de mis datos para gestionar esta inscripción y sus correos de confirmación. He leído la <a href="privacidad.html" target="_blank" rel="noopener">información de privacidad (nueva pestaña)</a>.</span></label>
+            <button class="button button--primary registration__submit" type="submit" disabled>Enviar mi código <span aria-hidden="true">↗</span></button>
+            <p id="form-status" class="form-status" role="status" aria-atomic="true"></p>
+            <noscript><p>Activa JavaScript y abre la web alojada para registrar y verificar tu correo.</p></noscript>
+          </form>
+          <form id="verification-form" hidden aria-labelledby="verification-title">
+            <h3 id="verification-title" tabindex="-1">Revisa tu correo</h3>
+            <p class="source-note" id="verification-description"></p>
+            <div class="form-field"><label for="verification-code">Código de 6 dígitos</label><input id="verification-code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9]{6}" minlength="6" maxlength="6" required aria-describedby="code-hint"><small id="code-hint">Vence en 10 minutos. Revisa también Spam. No compartas tu código.</small></div>
+            <button class="button button--primary registration__submit" type="submit">Verificar y confirmar</button>
+            <div class="verification-actions"><button type="button" class="text-button" id="resend-code" disabled>Reenviar código</button><button type="button" class="text-button" id="edit-email">Corregir mis datos</button></div>
+            <p id="verification-status" class="form-status" role="status" aria-atomic="true"></p>
+          </form>
+          <div id="registration-success" hidden>
+            <span class="badge badge--confirmed">Correo verificado</span>
+            <h3 id="success-title" tabindex="-1">¡Ya estás en la lista!</h3>
+            <p>Tu inscripción está confirmada. Conserva tu referencia:</p>
+            <p id="registration-reference" class="registration-reference"></p>
+            <p id="receipt-status" class="source-note" role="status"></p>
+            <button class="text-button" id="retry-receipt" type="button" hidden>Reintentar correo de confirmación</button>
+            <p class="source-note">Esta inscripción no incluye el juego, acceso anticipado ni una reserva de inventario de Rockstar.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="page-footer"><p>GTA VI es una marca de sus respectivos titulares. Proyecto independiente, sin afiliación con Rockstar Games. El registro no incluye una copia del juego.</p><a href="privacidad.html">Privacidad y baja</a> · <a href="https://www.rockstargames.com/VI">Sitio oficial de GTA VI ↗</a></footer>
+    <script src="assets/vendor/gsap.min.js"></script>
+    <script src="assets/vendor/ScrollTrigger.min.js"></script>
+    <script src="app.js"></script>
+    <script src="registration.js"></script>
+    <script src="spatial.js"></script>
+  </body>
+</html>
